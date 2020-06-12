@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ssm_blog-master:war exploded">
+    <output-path>$USER_HOME$/Desktop/artifacts/ssm_blog_master_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ssm_blog-master" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ssm_blog-master/web/Web" />
+    </root>
+  </artifact>
+</component>

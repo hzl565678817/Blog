@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/JavaWebProject/WebRoot/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/JavaWebProject/WebRoot" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/JavaWebProject/src" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/JavaWebProject/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib1" level="project" />
+    <orderEntry type="library" name="lib2" level="project" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.11.3" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.62" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.netbeans.external:javax.annotation:RELEASE120-1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.main.ejb:javax.ejb:3.1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.main.transaction:javax.transaction:3.1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.main.javaee-api:javax.annotation:3.1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.main.javaee-api:javax.jms:3.1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.persistence:javax.persistence:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.main.connectors:javax.resource:3.1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.ecf:javax.servlet:3.1.0.v201410161800" level="project" />
+    <orderEntry type="library" name="Maven: com.guicedee.services:javax.servlet.jsp:1.0.9.14" level="project" />
+    <orderEntry type="library" name="Maven: com.guicedee.services:jakarta.servlet.jsp-api:1.0.9.14" level="project" />
+    <orderEntry type="library" name="Maven: com.guicedee.services:javax.servlet-api:1.0.9.14" level="project" />
+    <orderEntry type="library" name="Maven: com.guicedee.services:jakarta.el:1.0.9.14" level="project" />
+    <orderEntry type="library" name="Maven: com.guicedee.services:javax.transaction:1.0.12.0-jre8" level="project" />
+  </component>
+</module>
