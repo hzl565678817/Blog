@@ -15,6 +15,12 @@ mapper代理开发时将namespace指定为mapper接口的全限定名
     <update id="changePassword" parameterType="admin">
       update admin set password=#{password} where username=#{username}
    </update>
+    <insert id="insertLogin" parameterType="String">
+		insert into log (username,`time`,dowhat) values (#{username},NOW(),'登陆');
+	</insert>
 
+    <select id="selectLog" resultType="com.Donitz.entity.Logs">
+        select username,`time`,dowhat from log;
+    </select>
 </mapper>
  

@@ -4,9 +4,13 @@ import javax.annotation.Resource;
 
 
 import com.Donitz.entity.Admin;
+import com.Donitz.entity.Logs;
 import org.springframework.stereotype.Service;
 
 import com.Donitz.mapper.AdminMapper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class AdminService {
@@ -35,7 +39,14 @@ public class AdminService {
 
         return true;
     }
-
+    public void insertLogin(String username) throws Exception{
+        adminMapper.insertLogin(username);
+    }
+    public List<Logs> selectLog() throws Exception{
+        List<Logs> list;
+        list = adminMapper.selectLog();
+        return list;
+    }
 
     /*修改用户登录密码*/
     public void changePassword(String username, String newPassword) throws Exception {

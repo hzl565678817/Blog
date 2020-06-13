@@ -50,9 +50,10 @@ public class UserController extends BasicController {
     }
 
     @RequestMapping(value = "/register")
-    public int unameRegister(HttpServletRequest httpServletRequest) {
+    public int unameRegister(HttpServletRequest httpServletRequest) throws Exception {
         String username = httpServletRequest.getParameter("username");
         String password = httpServletRequest.getParameter("password");
+        userInfoService.insertRegister(username);
         return userInfoService.regisUserinfo(username, password);
     }
 

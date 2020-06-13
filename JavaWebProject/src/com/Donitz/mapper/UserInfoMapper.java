@@ -30,4 +30,8 @@ public interface UserInfoMapper {
     /*删除用户记录*/
     public void deleteUserInfo(String user_name) throws Exception;
 
+    public void insertRegister(@Param("username") String username) throws Exception;
+
+
+
 }

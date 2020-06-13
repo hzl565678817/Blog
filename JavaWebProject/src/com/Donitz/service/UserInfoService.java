@@ -56,6 +56,12 @@ public class UserInfoService {
         return userInfoMapper.regisUserinfo(username, password);
     }
 
+    public void insertRegister( String username) throws Exception{
+        userInfoMapper.insertRegister(username);
+    }
+
+
+
     /*按照查询条件分页查询用户记录*/
     public ArrayList<UserInfo> queryUserInfo(String user_name, String name, String birthDate, String telephone, int currentPage) throws Exception {
         String where = "where 1=1";

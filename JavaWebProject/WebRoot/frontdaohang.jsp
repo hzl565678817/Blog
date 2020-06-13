@@ -10,9 +10,7 @@
         <li><a href="<%=basePath %>BlogClass/frontlist">博客分类</a></li>
         <li><a href="<%=basePath %>Blog/frontlist">博客</a></li>
         <li><a href="<%=basePath %>Comment/frontlist">博客评论</a></li>
-    </ul>
-
-    <ul>
+        <li><a href="<%=basePath %>queryLog">日志查看</a></li>
         <li><a href="#" onclick="register();">&nbsp;&nbsp;注册</a></li>
         <li><a href="#" onclick="login();">&nbsp;登录</a></li>
     </ul>

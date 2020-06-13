@@ -1,6 +1,7 @@
 package com.Donitz.controller;
 
 import java.io.PrintWriter;
+import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.Donitz.entity.Admin;
+import com.Donitz.entity.Logs;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.Donitz.service.AdminService;
 import com.Donitz.utils.UserException;
+import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
@@ -43,7 +46,8 @@ public class XiTongController {
 
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public void login(@Validated Admin admin, BindingResult br, Model model, HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception {
+    public void login(@Validated Admin admin, BindingResult br, HttpServletResponse response, HttpSession session) throws Exception {
+        adminService.insertLogin(admin.getUsername());
         boolean success = true;
         String msg = "";
         if (br.hasErrors()) {
@@ -101,6 +105,15 @@ public class XiTongController {
                     .encode("密码修改失败!", "GBK"));
             return "error";
         }
+    }
+
+    @RequestMapping(value = "/queryLog")
+    public ModelAndView getLogs(HttpSession session) throws Exception {
+        ModelAndView mvc = new ModelAndView();
+        List<Logs> logs = adminService.selectLog();
+        mvc.addObject("logs",logs);
+        mvc.setViewName("logs");
+        return mvc;
     }
 
 
